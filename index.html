@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geekster Change Shape And Color</title>
+    <style>
+        /* Base styles for larger screens */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .parent {
+            width: max-content;
+            height: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* Styles for the colorChange div */
+        .colorChange {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: orange; /* Default background color for colorChange div */
+        }
+
+        /* Styles for the shapeChange div */
+        .shapeChange {
+            width: 80px;
+            height: 80px;
+            background-color: white; /* Default background color for shapeChange div */
+        }
+
+        /* Styles for the colorDefine button */
+        .colorDefine {
+            margin: 25px;
+        }
+
+        /* Media query for screens with a maximum width of 600px */
+        @media (max-width: 600px) {
+            /* Adjusting styles for smaller screens */
+            .parent {
+                height: 400px; /* Adjust the height for smaller screens */
+            }
+
+            .colorChange {
+                width: 100px; /* Adjust the size for smaller screens */
+                height: 100px;
+            }
+
+            .shapeChange {
+                width: 50px; /* Adjust the size for smaller screens */
+                height: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <div class="parent">
+            <!-- Container for color change -->
+            <div class="colorChange">
+                <!-- Placeholder for color change content -->
+                <div class="shapeChange"></div>
+            </div>
+            <!-- Button to trigger color change -->
+            <button class="colorDefine">Change Color</button>
+            <!-- Button to trigger shape change -->
+            <button class="shapeDefine">Change Shape</button>
+        </div>
+    </header>
+
+    <!-- JavaScript script reference -->
+    <script src="./script.js"></script>
+</body>
+</html>
